@@ -4,15 +4,15 @@
     <table>
       <thead>
       <tr>
-        <th v-for="header in headers">
-          {{ header }}
+        <th v-for="columnName in columnsNames">
+          {{ columnName }}
         </th>
       </tr>
       </thead>
       <tbody>
-      <tr v-for="game in data">
+      <tr v-for="row in data">
         <td v-for="field in fields">
-          {{ game[field] }}
+          {{ row[field] }}
         </td>
       </tr>
       </tbody>
@@ -26,7 +26,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  headers: {
+  columnsNames: {
     type: Array,
     required: true,
   },

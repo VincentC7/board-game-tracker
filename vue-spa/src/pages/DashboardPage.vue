@@ -1,7 +1,7 @@
 <template>
   <TableList
       table-title="Tableau de bord"
-      :headers=headers
+      :columns-names=columnsNames
       :data=games
       :fields=fields
   >
@@ -15,7 +15,7 @@ import axios from "axios";
 import TableList from "@/components/TableList.vue";
 
 const games = ref([]);
-const headers = [
+const columnsNames = [
     "Titre",
     "Date d'achat",
     "Prix",
