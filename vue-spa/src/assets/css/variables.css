@@ -3,4 +3,8 @@
 
     --padding-small: 0.75rem;
     --padding-meddium: 1.5rem;
+
+    --border-color: #e3e7ed;
+    --border-radius-small: 0.2rem;
+    --border-radius-meddium: 0.5rem;
 }

@@ -44,7 +44,7 @@ ul {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  border-right: 1px solid #e3e7ed;
+  border-right: 1px solid var(--border-color);
 }
 
 .sidebar-title {
@@ -56,7 +56,7 @@ ul {
   display: flex;
   margin: var(--margin-small) 0;
   padding: var(--padding-small);
-  border-radius: 3px;
+  border-radius: var(--border-radius-small);
   text-decoration: none;
   color: inherit;
 }
@@ -67,6 +67,7 @@ ul {
 
 li:hover, .router-link-active {
   background-color: #eceff3;
+  border-radius: var(--border-radius-small);
   font-weight: bold;
 }
 
